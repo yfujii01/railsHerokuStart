@@ -61,9 +61,10 @@ gem 'pg', group: :production
 
 ```
 $ rails s
+$ open http://0.0.0.0:3000
 ```
 
-[http://0.0.0.0:3000](http://0.0.0.0:3000)
+この画面が表示されたら成功
 
 ![](.README_images/root_page_image.png)
 
@@ -75,4 +76,19 @@ $ git commit -m 'add root page'
 
 $ APP_NAME_HEROKU=yf-rails-heroku-start
 $ heroku create ${APP_NAME_HEROKU}
+$ git push heroku master
 ```
+
+- 動作確認
+
+```
+$ heroku open
+
+or
+
+$ open https://${APP_NAME_HEROKU}.herokuapp.com/
+```
+
+この画面が表示されたら成功
+
+![](.README_images/root_page_image.png)
